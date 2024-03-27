@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Title -->
+  <title>Smoothie Order Form</title>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Smoothie Order Form</h1>
+    </header>
+    <!-- Main Content -->
+    <main>
+        <!-- Smoothie Order Form -->
+        <form id="smoothieForm">
+            <!-- Select Smoothie Flavor -->
+            <label for="flavor">Select Smoothie Flavor:</label>
+            <select id="flavor" name="flavor">
+                <option value="strawberry">Strawberry</option>
+                <option value="banana">Banana</option>
+                <option value="mango">Mango</option>
+                <option value="blueberry">Blueberry</option>
+            </select><br>
+            <!-- Select Size -->
+            <label for="size">Select Size:</label>
+            <input type="radio" id="small" name="size" value="small">
+            <label for="small">Small</label>
+            <input type="radio" id="medium" name="size" value="medium">
+            <label for="medium">Medium</label>
+            <input type="radio" id="large" name="size" value="large">
+            <label for="large">Large</label><br><br>
+            <!-- Select Toppings -->
+            <label for="toppings">Select Toppings (Hold Ctrl/Cmd to select multiple):</label><br>
+            <select id="toppings" name="toppings" multiple>
+                <option value="protein">Protein Powder</option>
+                <option value="spinach">Spinach</option>
+                <option value="almond">Almond Milk</option>
+                <option value="yogurt">Greek Yogurt</option>
+            </select><br><br>
+            <!-- Order Button -->
+            <button type="button" onclick="orderSmoothie()">Order</button>
+        </form>
+    </main>
+    <!-- Smoothie Output Section -->
+    <div id="smoothieOutput">
+        <img id="smoothieImage" src="" alt="Smoothie Image" style="display: none;">
+        <div id="smoothieDescription"></div>
+    </div>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Smoothie Bar. All rights reserved.</p>
+    </footer>
+    <!-- External JavaScript -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
